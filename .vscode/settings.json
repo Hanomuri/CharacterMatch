@@ -1,0 +1,12 @@
+{
+    "workbench.colorCustomizations": {
+        "minimap.background": "#00000000",
+        "scrollbar.shadow": "#00000000"
+    },
+    "files.associations": {
+        "vector": "cpp",
+        "iostream": "cpp",
+        "xtree": "cpp",
+        "xstring": "cpp"
+    }
+}
