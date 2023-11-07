@@ -1,11 +1,13 @@
+{% load static %}
 <!DOCTYPE html>
-<html style="font-size: 10px; font-family: 'Courier New', Courier, monospace;"
+<html style="font-size: 20px; font-family: 'Courier New', Courier, monospace;"
 lang="ES">
     <head>
         <title>{% block title %}Django App{% endblock %}</title></title>
+        <link rel="stylesheet" href= '{% static 'css/style.css' %}' />
     </head>
     <body>
-        <h1>Character Match</h1>
+        <h1 class="titulo">CharacterMatch</h1>
         <div class="container">{% block content %}{% endblock %}</div>
     </body>
 </html>

@@ -1,11 +1,40 @@
+<section>
+    <button class="button">
+        <span><a href="../">Home</a></span>
+    </button>
+
+</section>
+
+<section>
+    <button class="button">
+        <span><a href="../faq">Faq</a></span>
+    </button>
+
+</section>
+
 {% extends "base.html" %} {% block title %} Form {% endblock %}
 {% block content %} 
-<ul>
-    {% for question in form%}
-    <li>
-        {%if question.answered != 0%} {{question.question}}: question.answered{% endif %}
-    </li>
-    {% endfor %}
-</ul>
+
+
+
+<h3>Responde las siguientes preguntas:</h3>
+<hr>
+<footer class="footer">
+    <div class="content">
+        <div class="footer-row">
+            <br>
+            <br>
+
+            <ul>
+                {% for question in form%}
+                <li>
+                    {%if question.answered != 0%} {{question.question}}: question.answered{% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+
+        </div>
+    </div>
+</footer> 
 
 {% endblock %}
