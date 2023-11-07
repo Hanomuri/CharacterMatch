@@ -1,38 +1,40 @@
-{% extends "base.html" %} {% block title %} Form {% endblock %}
-{% block content %} 
-<h4 class="question">Do you want to know what are your wonderful qualities?<br>
-    This is the page for you!</h4>
-
-<h5 class="sub">Encuentra personas y personajes famosos que tienen tus mismas caracteristicas</h5>
 <section>
     <button class="button">
-        <span><a href="hoja2.html">Comenzar</a></span>
+        <span><a href="../">Home</a></span>
     </button>
 
 </section>
+
+<section>
+    <button class="button">
+        <span><a href="../faq">Faq</a></span>
+    </button>
+
+</section>
+
+{% extends "base.html" %} {% block title %} Form {% endblock %}
+{% block content %} 
+
+
+
+<h3>Responde las siguientes preguntas:</h3>
 <hr>
 <footer class="footer">
     <div class="content">
         <div class="footer-row">
-            <h4>Autores:</h4>
-            
             <br>
             <br>
 
             <ul>
-                <li>Persona1</li>
-                <li>Persona2</li>
-                <li>Persona3</li>
-                <li>Persona4</li>
+                {% for question in form%}
+                <li>
+                    {%if question.answered != 0%} {{question.question}}: question.answered{% endif %}
+                </li>
+                {% endfor %}
             </ul>
+
         </div>
     </div>
 </footer> 
-<ul>
-    {% for question in form%}
-    <li>
-        {%if question.answered != 0%} {{question.question}}: question.answered{% endif %}
-    </li>
-    {% endfor %}
-</ul>
+
 {% endblock %}
