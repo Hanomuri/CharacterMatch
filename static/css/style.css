@@ -1,40 +1,39 @@
-body {
-    background-color: rgb(42, 130, 202);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+html {                                             /* Tipo de letra de la pagina*/
+    font-family: 'Montserrat', sans-serif;
 }
-.container.question{
-    text-align: center;
+
+#body {                                            /* color de fondo */
+    background-color: rgb(20, 20, 27);
 }
-.container.titulo{
-    text-align: center;
+
+.encabe{                                           /*color de letra*/
+    color: aliceblue;
 }
-.question {
-    text-align: center;
-}
-.titulo {
-    text-align: center;
-}
-.sub {
-    text-align: center;
-}
-.button {
-    text-align: center; /*no funciona, pendiente arreglar*/
-}
-footer{
-    text-transform: capitalize;
+
+.butn {                                     
+    display: flex;
+    justify-content: left;
+    padding-top: 30px;
+    padding-bottom: 20px;
     text-align: left;
 }
-.content {
-    max-width: 1200px;
-    margin: 0 auto;
+
+.button{
+    text-decoration: none;
+    background-color: rgb(0, 153, 255);
+    color:rgb(0, 0, 0);
+    padding: 10px 25px;
+    border-radius: 10px;
+    transition: all .3s ease;
 }
-.footer {
-    background-color: rgb(24, 24, 41);
-    padding: 20px 0;
-    color: rgb(206, 209, 209);
-    
-}
-.footer-row {
-    display:flex;
-    flex-wrap: wrap;
-    
-}
+.button:hover {
+    background-color: rgb(0, 153, 255);
+    color:black;
+    box-shadow:
+    0 0 5px rgb(0, 153, 255),
+    0 0 20px rgb(0, 153, 255),
+    0 0 60px rgb(0, 153, 255),
+    0 0 150px rgb(0, 153, 255);
+  }

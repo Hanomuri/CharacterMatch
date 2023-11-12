@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+html {                                         /* Tipo de letra de la pagina*/
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {                                         /* color de fondo */
+  background-color: rgb(20, 20, 27);
+}
+
+
+/*.question, .titulo y .sub son de la parte principal de la pagina (pregunta al inicio, titulo y frase posterior a este ultimo*/
+.question {                                 
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color:aliceblue;
+}
+.titulo {                               
+  text-align: center;
+  font-size: 100px;
+  padding-block: 0px;
+  color:aliceblue;
+}
+.sub {
+  text-align: center;
+  padding-block: 25px;
+  color:aliceblue;
+}
+
+
+/*.boton, .btn, .btn:hover son parte del boton de "comenzar"*/
+.boton {                                     
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 140px;
+  text-align: center;
+
+}
+.btn {
+  text-decoration: none;
+  background-color: rgb(0, 153, 255);
+  color:rgb(0, 0, 0);
+  padding: 20px 35px;
+  border-radius: 20px;
+  transition: all .3s ease;
+}
+.btn:hover {
+  background-color: rgb(0, 153, 255);
+  color:black;
+  box-shadow:
+  0 0 5px rgb(0, 153, 255),
+  0 0 20px rgb(0, 153, 255),
+  0 0 60px rgb(0, 153, 255),
+  0 0 150px rgb(0, 153, 255);
+}
+
+
+/*.pie, .section, .text11 y .ramo son parte del pie de pagina*/
+.pie {                                  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color:rgb(45, 62, 80)
+}
+.section {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+  text-align: center;
+  color: azure;
+}
+.text11 {
+  padding-block: 0;
+}
+.ramo {
+  padding-top: 50px;
+}

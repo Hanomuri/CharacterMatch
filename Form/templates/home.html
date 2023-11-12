@@ -1,23 +1,44 @@
-<section>
-  <button class="button">
-      <span><a href="faq">Faq</a></span>
-  </button>
 
-</section>
+
+<div class="butn"><a href="faq" class="button">Faq</a></div> <!--boton de comanzar-->
 
 {% extends "base.html" %} {% block title %} Home Page {% endblock %}
+
+
 {% block content %} 
 
+{% load static %}
+<link rel="stylesheet" href= '{% static 'css/home.css' %}' />
+<header id="title">
+  <h3 class="question">Do you want to know what are your wonderful qualities?<br>  <!--titulo y otros-->
+    This is the page for you!</h4>
+  <h1 class="titulo">CharacterMatch</h1>
+  <h3 class="sub">Encuentra personas y personajes famosos que tienen tus mismas caracteristicas</h5>
+</header>
 
-<h4 class="question">Do you want to know what are your wonderful qualities?<br>
-  This is the page for you!</h4>
+<div class="boton"><a href="form" class="btn">Comenzar</a></div> <!--boton de comanzar-->
 
-<h5 class="sub">Encuentra personas y personajes famosos que tienen tus mismas caracteristicas</h5>
+<footer class="pie"> <!--pie de pagina-->
+  <div class="section">
+      <div class="ramo">
+          <h3>IWG-101</h3>
+          <p>Proyecto Semestral de Introducción a la Ingeniería</p>
+          <hr/>
+      </div>
 
-<section>
-  <button class="button">
-      <span><a href="form">Comenzar</a></span>
-  </button>
+      <div class="tex1">
+          <h3>Hecho por:</h3>  <!--nombres de integrantes-->
+          <div class="text11">
+              <p>Bastian Jimenez</p>
+              <p>Alejandro Escudero</p>
+              <p>Kate Drolett</p>
+              <p>Benjamin Escalona</p>
+              <hr/>
+          </div>
+      </div>
+  </div>
+</footer>
 
-</section>
+
 {% endblock %}
+

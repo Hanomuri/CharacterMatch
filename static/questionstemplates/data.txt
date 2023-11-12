@@ -1,0 +1,11 @@
+Gay, Bisexual, Lesbiana, Asexual, Arromántico, Pansexual, Sin etiqueta, Otra
+Trastorno limite de personalidad, Autismo, TDAH, Dislexia, Sindrome de Tourette, Otra
+ESTJ, ISTJ, ISFJ, ESFJ, INTP, ENTP, INTJ, ENTJ, ESFP, ISFP, ESTP, ISTP, ENFJ, INFJ, INFP, ENFP
+Blanca, Mestiza, Afroamericana, Asiática
+SININFORMACION
+Masculino, Femenino, Queer, No binarie, Sin etiquetas
+Reino Unido, Estados Unidos, Argentina, Chile, Australia, Libano, Sudáfrica, Canadá, Italia, Tanzania, España, Republica Dominicana, Puerto Rico, otro
+
+def f(str):
+    for i in str:
+        print("<option value="+i+">"+i+"</option>")
