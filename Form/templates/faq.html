@@ -1,24 +1,33 @@
 <div class="butn"><a href="../" class="button">Home</a></div> <!--boton de comanzar-->
 {% extends "base.html" %} {% block title %} Faq {% endblock %}
 {% block content %} 
-    <h2> Benjamin Escalona </h2>
-    <h2> Kate Drolet </h2>
-    <h2> Alejandro Escudero </h2>
-    <h2> Bastian Jimenez </h2>
-    Justification/Why we do this? 
-
-    Usually a lot of people that is different to the rest of person, whether something good or bad, they tend to think that they're alone in this world. The main point of creating this project is to make sure to let them know that they're not alone. 
-
-    What is CharacterMatch? 
-
-    CharacterMatch is a non-profit project run by University Students which it's objetive is to try to make everyone visible in the world by showing anyone that they're not alone in this world. There's someone that is just like you! 
-    CharacterMatch tries to show someone known that is similar to you. 
-
-    Who are we?
-
-    We are Civil Computing Engineering Students from Universidad Técnica Federico Santa Maria located in Valparaíso, Chile. We consist in a small group of persons that creates a site which tries to make anyone visible.
-
-
-    Mecanica corazon:
-    Realmente desconosco esto
+{% load static %}
+<link rel="stylesheet" href= '{% static 'css/faq.css' %}' />
+    <h2>
+        ¿Por qué hacemos esto?
+    </h2>
+    <p class="pp">
+        Usualmente las personas que son diferentes al resto, ya sea algo bueno o malo, tienden a pensar de que están solas en el mundo. El objetivo principal de crear este proyecto es dejar presente a aquellas personas, de que no están solas en el mundo.
+    </p>
+    <h2>
+        ¿Qué es "CharacterMatch"?
+    </h2>
+    <p class="pp">
+        CharacterMatch es un proyecto sin fines de lucro creado por estudiantes universitarios cuyos objetivos son intentar hacer a todos visibles en este mundo, mostrandole a cualquier persona que no está sola en el mundo. ¡Existe alguien que es tal como tú!
+        CharacterMatch intenta mostrarte alguien similar a ti.
+    </p>	
+    <h2>	
+        ¿Quienes somos? 
+    </h2>
+    <p class="pp">
+        Nosotros somos estudiantes de Ingeniería Civil Informática en la Universidad Técnica Federico Santa Maria, ubicada en Valparaíso, Chile. Somos un pequeño grupo de personas que crea una página la cual intenta dar visibilidad a todos.
+    </p>
+    <h2>				
+        ¿Qué nos diferencia del resto?
+    </h2>
+    <p class="pp">
+        Principalmente, el hecho de que nosotros somos estudiantes y queremos hacer un mundo mejor en lugar de hacer un proyecto con fines de lucro. Es por eso que "CharacterMatch" es gratis y sin ningún anuncio. 
+        Nuestra meta es realmentee ayudar a la gente, en lugar de dar un meensaje genérico que te hará sentir mejor por unos minutos, nosotros directamente te damos ejemplos de gente similar a tí.
+    </p>	
+    
 {% endblock %}
