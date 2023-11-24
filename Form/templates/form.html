@@ -14,127 +14,24 @@
 
 <h3>Responde las siguientes preguntas:</h3>
 <hr>
+
 <footer class="footer">
     <div class="content">
         <div class="footer-row">
             <br>
-            <form>
-            {% for question in form%}
-                
-                <div class = "form_question">
-                    <label style = "display: block; margin-bottom: 10px">
-                    {{question.question}}
-                </label>
-                {%if question.answered == 0%} 
-                    <input type = "radio" name = "mostlikely"> 1
-                    <input type = "radio" name = "mostlikely"> 2
-                    <input type = "radio" name = "mostlikely"> 3
-                    <input type = "radio" name = "mostlikely"> 4
-                    <input type = "radio" name = "mostlikely"> 5         
-                {% endif %}
-                {%if question.answered == 1%} 
-                    <input type = "radio" name = "choice"> Yes
-                    <input type = "radio" name = "choice"> No
-                {% endif %}
-                {%if question.answered == 2%}
-                    <select name ="format", id="format">
-                        <option selected disabled> Sexualidad </option>
-                        <option value="Gay">Gay</option>
-                        <option value="Bisexual">Bisexual</option>
-                        <option value="Lesbiana">Lesbiana</option>
-                        <option value="Asexual">Asexual</option>
-                        <option value="Arromántico">Arromántico</option>
-                        <option value="Pansexual">Pansexual</option>
-                        <option value="Sin etiqueta">Sin etiqueta</option>
-                        <option value="Otra">Otra</option>
-                    </select>
-                {% endif %}
-                {%if question.answered == 3%}
-                    <select name ="format", id="format">
-                        <option selected disabled> Trastorno limite de personalidad </option>
-                        <option value="Autismo">Autismo</option>
-                        <option value="TDAH">TDAH</option>
-                        <option value="Asexual">Asexual</option>
-                        <option value="Dislexia">Dislexia</option>
-                        <option value="Pansexual">Pansexual</option>
-                        <option value="Sindrome de Tourette">Sindrome de Tourette</option>
-                        <option value="Otra">Otra</option>
-                    </select>
-                {% endif %}
-                {%if question.answered == 4%}
-                    <select name ="format", id="format">
-                        <option selected disabled> Mbti </option>
-                        <option value="ESTJ">ESTJ</option>
-                        <option value="ISTJ">ISTJ</option>
-                        <option value="ISFJ">ISFJ</option>
-                        <option value="ESFJ">ESFJ</option>
-                        <option value="INTP">INTP</option>
-                        <option value="ENTP">ENTP</option>
-                        <option value="INTJ">INTJ</option>
-                        <option value="ISTJ">ISTJ</option>
-                        <option value="ENTJ">ENTJ</option>
-                        <option value="ESFP">ESFP</option>
-                        <option value="ISFP">ISFP</option>
-                        <option value="ESTP">ESTP</option>
-                        <option value="ISTP">ISTP</option>
-                        <option value="ENFJ">ENFJ</option>
-                        <option value="INFJ">INFJ</option>
-                        <option value="INFP">INFP</option>
-                        <option value="ENFP">ENFP</option>
-                    </select>
-                {% endif %}
-                {%if question.answered == 5%}
-                    <select name ="format", id="format">
-                        <option selected disabled> Etnia </option>
-                        <option value="Blanca">Blanca</option>
-                        <option value=Mestiza>Mestiza</option>
-                        <option value=Afroamericana>Afroamericana</option>
-                        <option value=Asiática>Asiática</option>
-                    </select>
-                {% endif %}
-                {%if question.answered == 6%}
-                    <select name ="format", id="format">
-                        <option selected disabled> Sin INFO </option>
-                    </select>
-                {% endif %}
-                {%if question.answered == 7%}
-                    <select name ="format", id="format">
-                        <option selected disabled> Género </option>
-                        <option value=Masculino>Masculino</option>
-                        <option value=Femenino>Femenino</option>
-                        <option value=Queer>Queer</option>
-                        <option value=No binarie>No binarie</option>
-                        <option value=Sin etiquetas>Sin etiquetas</option>
-                    </select>
-                {% endif %}
-                {%if question.answered == 8%}
-                    <select name ="format", id="format">
-                        <option selected disabled> País </option>
-                        <option value=Reino Unido>Reino Unido</option>
-                        <option value=Estados Unidos>Estados Unidos</option>
-                        <option value=Argentina>Argentina</option>
-                        <option value=Chile>Chile</option>
-                        <option value=Australia>Australia</option>
-                        <option value=Libano>Libano</option>
-                        <option value=Sudáfrica>Sudáfrica</option>
-                        <option value=Canadá>Canadá</option>
-                        <option value=Italia>Italia</option>
-                        <option value=Tanzania>Tanzania</option>
-                        <option value=España>España</option>
-                        <option value=Republica Dominicana>Republica Dominicana</option>
-                        <option value=Puerto Rico>Puerto Rico</option>
-                        <option value=otro>otro</option>
-                    </select>
-                {% endif %}
-            </div>
-            
-            
-            {% endfor %}
-            <br>
-            <input type="submit" value="Match" />
+            {% if submitted %}
+                Datos ingresados correctamente!
+                <div class="butn"><a href="../result" class="button">Resultados</a></div> <!--boton de comanzar-->
+            {% else %}
 
-        </form>
+                <form action="" method=POST>
+                    {% csrf_token %}
+                    
+                    {{ f.as_p }}
 
+                    <input type="submit" value="Match" class="btn btn-secondary">
+                </form>
+            {% endif %}
 
         </div>
     </div>

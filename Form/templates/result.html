@@ -1,0 +1,75 @@
+<div class="butn"><a href="../faq" class="button">Faq</a></div> <!--boton de comanzar-->
+
+<div class="butn"><a href="../" class="button">Home</a></div> <!--boton de comanzar-->
+
+{% extends "base.html" %} {% block title %} Form {% endblock %}
+{% block content %} 
+
+{% load formtags %}
+{% load static %}
+
+<script src="{% static 'js/questionscript.js' %}"></script>
+
+<h3>Responde las siguientes preguntas:</h3>
+<hr>
+
+<footer class="footer">
+    <div class="content">
+        <div class="footer-row">
+            <br>
+              {% if get %}
+                  <h3>{{names}} Matches</h3>
+                  <br>
+                  {% if sex != "None" %}
+                      Sexuality: {{sex}}
+                      <br>
+                  {% endif %} 
+                  <br>
+                  {% if ndiver != "None" %}
+                      Neurodivergence: {{ndiver}}
+                      <br>
+                  {% endif %} 
+                  <br>
+                  {% if mbti != "None" %}
+                      Mbti: {{mbti}}
+                      <br>
+                  {% endif %} 
+                  <br>
+                  {% if ethn != "None" %}
+                      Ethnicity: {{ethn}}
+                      <br>
+                  {% endif %} 
+                  <br>
+                  {% if disa != "None" %}
+                      Disability: {{disa}}
+                      <br>
+                  {% endif %} 
+                  <br>
+                  {% if iden != "None" %}
+                      Identity: {{iden}}
+                      <br>
+                  {% endif %} 
+                  <br>
+                  {% if country != "None" %}
+                      Country: {{country}}
+                      <br>
+                  {% endif %} 
+              {% else %}
+
+                <form action="" method=POST> {% csrf_token %}
+                    <select name ="name", id="format">
+                      <option selected disabled> None </option>
+                      {% for i in names %}
+                        
+                        <option value={{i}}>{{i}}</option>
+                      {% endfor %}
+                    </select>
+                      <input type="submit" value="GET RESULT" class="btn btn-secondary">
+                </form>
+            {% endif %}
+
+        </div>
+    </div>
+</footer> 
+
+{% endblock %}
