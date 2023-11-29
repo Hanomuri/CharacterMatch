@@ -1,6 +1,4 @@
-<div class="butn"><a href="../faq" class="button">Faq</a></div> <!--boton de comanzar-->
 
-<div class="butn"><a href="../" class="button">Home</a></div> <!--boton de comanzar-->
 
 {% extends "base.html" %} {% block title %} Form {% endblock %}
 {% block content %} 
@@ -9,8 +7,14 @@
 {% load static %}
 
 <script src="{% static 'js/questionscript.js' %}"></script>
+<link rel="stylesheet" href= '{% static 'css/home.css' %}' />
 
-<h3>Responde las siguientes preguntas:</h3>
+<div class="contenedorre">
+    <div class="butnr2"><a href="../" class="buttonr2">Home</a></div> <!--boton de comanzar-->
+    <div class="butnr1"><a href="../faq" class="buttonr1">Faq</a></div> <!--boton de comanzar-->
+</div>
+
+<h3 class="encabe">Responde las siguientes preguntas:</h3>
 <hr>
 
 <footer class="footer">

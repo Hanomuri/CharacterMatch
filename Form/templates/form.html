@@ -1,8 +1,9 @@
 
 
-<div class="butn"><a href="../faq" class="button">Faq</a></div> <!--boton de comanzar-->
-
-<div class="butn"><a href="../" class="button">Home</a></div> <!--boton de comanzar-->
+<div class="contenedor">
+    <div class="butn2"><a href="../" class="button2">Home</a></div> <!--boton de comanzar-->
+    <div class="butn1"><a href="../faq" class="button1">Faq</a></div>  <!--boton de comanzar-->
+</div>
 
 {% extends "base.html" %} {% block title %} Form {% endblock %}
 {% block content %} 
@@ -11,17 +12,17 @@
 {% load static %}
 
 <script src="{% static 'js/questionscript.js' %}"></script>
+<link rel="stylesheet" href= '{% static 'css/home.css' %}' />
 
-<h3>Responde las siguientes preguntas:</h3>
+<h3 class="encabe">Responde las siguientes preguntas:</h3>
 <hr>
-
 <footer class="footer">
     <div class="content">
         <div class="footer-row">
             <br>
             {% if submitted %}
-                Datos ingresados correctamente!
-                <div class="butn"><a href="../result" class="button">Resultados</a></div> <!--boton de comanzar-->
+                <h1>Datos ingresados correctamente!</h1>
+                <div class="butnenv"><a href="../result" class="buttonenv">Resultados</a></div> <!--boton de comanzar-->
             {% else %}
 
                 <form action="" method=POST>

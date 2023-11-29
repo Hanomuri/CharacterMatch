@@ -10,9 +10,18 @@ html {                                             /* Tipo de letra de la pagina
 
 .encabe{                                           /*color de letra*/
     color: aliceblue;
+    text-align: center;
+    padding-block: 25px;
 }
 
-.butn {                                     
+.contenedor {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(45, 62, 80);
+    padding: 5px;
+}
+
+.butn1 {                                     
     display: flex;
     justify-content: left;
     padding-top: 30px;
@@ -20,15 +29,15 @@ html {                                             /* Tipo de letra de la pagina
     text-align: left;
 }
 
-.button{
+.button1{
     text-decoration: none;
-    background-color: rgb(0, 153, 255);
-    color:rgb(0, 0, 0);
-    padding: 10px 25px;
-    border-radius: 10px;
+    background-color: rgb(37, 43, 47);
+    color:rgb(0, 153, 255);
+    padding: 10px 20px;
+    border-radius: 5px;
     transition: all .3s ease;
 }
-.button:hover {
+.button1:hover {
     background-color: rgb(0, 153, 255);
     color:black;
     box-shadow:
@@ -36,6 +45,158 @@ html {                                             /* Tipo de letra de la pagina
     0 0 20px rgb(0, 153, 255),
     0 0 60px rgb(0, 153, 255),
     0 0 150px rgb(0, 153, 255);
-  }
+}
 
-  /*.pie, .section, .text11 y .ramo son parte del pie de pagina*/
+.butn2 {                                     
+    display: flex;
+    justify-content: right;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-right: 1250px;
+    text-align: right;
+}
+
+.button2{
+    text-decoration: none;
+    background-color: rgb(37, 43, 47);
+    color:rgb(0, 153, 255);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all .3s ease;
+}
+.button2:hover {
+    background-color: rgb(0, 153, 255);
+    color:black;
+    box-shadow:
+    0 0 5px rgb(0, 153, 255),
+    0 0 20px rgb(0, 153, 255),
+    0 0 60px rgb(0, 153, 255),
+    0 0 150px rgb(0, 153, 255);
+}
+
+.footer{                                           /*color de letra*/
+    color: aliceblue;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.butnfaqq {
+    display: flex;
+    justify-content: left;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.buttonfaqq {
+    text-decoration: none;
+    background-color: rgb(37, 43, 47);
+    color:rgb(0, 153, 255);
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all .3s ease;
+}
+
+.buttonfaqq:hover {
+    background-color: rgb(0, 153, 255);
+    color:black;
+    box-shadow:
+    0 0 5px rgb(0, 153, 255),
+    0 0 20px rgb(0, 153, 255),
+    0 0 60px rgb(0, 153, 255),
+    0 0 150px rgb(0, 153, 255);
+}
+
+.contenedorre {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(45, 62, 80);
+    padding: 5px;
+}
+
+.butnr1 {
+    display: flex;
+    justify-content: left;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.buttonr1 {
+    text-decoration: none;
+    background-color: rgb(37, 43, 47);
+    color:rgb(0, 153, 255);
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all .3s ease;
+}
+
+.buttonr1:hover {
+    background-color: rgb(0, 153, 255);
+    color:black;
+    box-shadow:
+    0 0 5px rgb(0, 153, 255),
+    0 0 20px rgb(0, 153, 255),
+    0 0 60px rgb(0, 153, 255),
+    0 0 150px rgb(0, 153, 255);
+}
+
+.butnr2 {
+    display: flex;
+    justify-content: left;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    margin-right: 1250px;
+    text-align: left;
+}
+
+.buttonr2 {
+    text-decoration: none;
+    background-color: rgb(37, 43, 47);
+    color:rgb(0, 153, 255);
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all .3s ease;
+}
+
+.buttonr2:hover {
+    background-color: rgb(0, 153, 255);
+    color:black;
+    box-shadow:
+    0 0 5px rgb(0, 153, 255),
+    0 0 20px rgb(0, 153, 255),
+    0 0 60px rgb(0, 153, 255),
+    0 0 150px rgb(0, 153, 255);
+}
+
+.butnenv {
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 140px;
+    text-align: center;
+}
+
+.buttonenv {
+    text-decoration: none;
+    background-color: rgb(0, 153, 255);
+    color:rgb(0, 0, 0);
+    padding: 20px 35px;
+    border-radius: 20px;
+    transition: all .3s ease;
+}
+
+.buttonenv:hover {
+    background-color: rgb(0, 153, 255);
+    color:black;
+    box-shadow:
+    0 0 5px rgb(0, 153, 255),
+    0 0 20px rgb(0, 153, 255),
+    0 0 60px rgb(0, 153, 255),
+    0 0 150px rgb(0, 153, 255);
+}
+
